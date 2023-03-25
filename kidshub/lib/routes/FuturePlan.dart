@@ -9,6 +9,14 @@ class FuturePlan extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+          appBar: AppBar(
+              title: Text(
+                "Kids Hub",
+                style: TextStyle(letterSpacing: 10),
+              ),
+              centerTitle: true,
+              backgroundColor: Colors.red,
+            ),
      
     ));
   }
