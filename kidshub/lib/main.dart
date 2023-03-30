@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => const HomePage(),
         "/futurePlan": (context) => const FuturePlan(),
-        "/edu": (context) => const EDU(),
+        "/edu": (context) =>  EDU(),
         "/health": (context) => const Health(),
         "/nut": (context) => const Nut(),
         "/ent": (context) => const ENT(),

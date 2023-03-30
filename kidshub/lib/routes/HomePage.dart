@@ -1,7 +1,6 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, unused_local_variable, file_names
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import 'Drawer.dart';
 
@@ -13,9 +12,17 @@ class HomePage extends StatelessWidget {
     final isDesktop = MediaQuery.of(context).size.width >= 600;
     final isMobile = MediaQuery.of(context).size.width < 600;
     double screenWidth = MediaQuery.of(context).size.width;
+
+    screen(){
+      if (isDesktop) {
+        return MyDrawer();
+      }
+    }
+
+
     return SafeArea(
-        child: Scaffold(
-    
+      
+        child: Scaffold( 
             drawer: MyDrawer(),
             appBar: AppBar(
               title: Text(
@@ -44,16 +51,9 @@ class HomePage extends StatelessWidget {
                           alignment: Alignment.center,
                           height: 200,
                           width: double.infinity,
-                          child: Text(
-                            "Hello Woreld",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 32,
-                                fontWeight: FontWeight.bold),
-                          ),
                           decoration: BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage("assets/imgs/main_top.png"),
+                                  image: AssetImage("assets/imgs/t.png"),
                                   fit: BoxFit.cover)),
                         ),
                       ],
@@ -90,7 +90,7 @@ class HomePage extends StatelessWidget {
                                                 image: AssetImage(
                                                     "assets/imgs/edu.png"))),
                                       ),
-                                      Text("Education"),
+                                      Text("Education",style: TextStyle(fontWeight: FontWeight.w700,fontFamily: "mycustom"),),
                                     ])),
                               ])),
                           Container(
@@ -116,7 +116,7 @@ class HomePage extends StatelessWidget {
                                                 image: AssetImage(
                                                     "assets/imgs/health.png"))),
                                       ),
-                                      Text("Health"),
+                                      Text("Health",style: TextStyle(fontWeight: FontWeight.w700,fontFamily: "mycustom"),),
                                     ])),
                               ])),
                           Container(
@@ -142,7 +142,7 @@ class HomePage extends StatelessWidget {
                                                 image: AssetImage(
                                                     "assets/imgs/entertaining.png"))),
                                       ),
-                                      Text("Entertaining"),
+                                      Text("Entertaining",style: TextStyle(fontWeight: FontWeight.w700,fontFamily: "mycustom"),),
                                     ])),
                               ])),
                           Container(
@@ -168,23 +168,15 @@ class HomePage extends StatelessWidget {
                                                 image: AssetImage(
                                                     "assets/imgs/nut.png"))),
                                       ),
-                                      Text("Nutrition"),
+                                      Text("Nutrition",style: TextStyle(fontWeight: FontWeight.w700,fontFamily: "mycustom"),),
                                     ])),
                               ])),
                         ],
                       ),
                     ),
-
                     SizedBox(
                       height: 25,
                     ),
-                    SingleChildScrollView(child: Column(
-
-                      children: [
-
-                        
-                      ],
-                    ),),
                     Expanded(
                         child: Column(
                       children: [
@@ -194,13 +186,6 @@ class HomePage extends StatelessWidget {
                           },
                           child: Container(
                             height: 300,
-                            child: Center(
-                                child: Text(
-                              "Gellery",
-                              style: TextStyle(
-                                fontSize: 53,
-                              ),
-                            )),
                             width: double.infinity,
                             clipBehavior: Clip.none,
                             decoration: BoxDecoration(
@@ -212,11 +197,10 @@ class HomePage extends StatelessWidget {
                                     ))),
                           ),
                         ),
-                         
+                       
                       ],
                     )),
-                  ]))
-                  
+                  ])),
                 ]))));
   }
 }

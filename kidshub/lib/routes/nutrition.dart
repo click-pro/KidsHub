@@ -9,7 +9,7 @@ class Nut extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-           appBar: AppBar(
+            appBar: AppBar(
               title: Text(
                 "Kids Hub",
                 style: TextStyle(letterSpacing: 10),
@@ -17,215 +17,108 @@ class Nut extends StatelessWidget {
               centerTitle: true,
               backgroundColor: Colors.red,
             ),
-            body: Container(
-              padding: EdgeInsets.all(15),
-              child:
-
-            
-            SingleChildScrollView(
+            body: SingleChildScrollView(
+              padding: EdgeInsets.all(7),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
-                    height: 37,
-                  ),
-                  Text(
-                    "Ask a nutiristshinist?",
-                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 25,),
-                  ),
-                  SizedBox(
-                    height: 25,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      
-                    color: Color.fromARGB(255, 228, 228, 225),
-                    borderRadius: BorderRadius.circular(15),
-
-                    ),
-                    width: double.infinity,
-                    height: 450,
-                    child: Column(
-                      children: [
-                        Container(
-                          clipBehavior: Clip.none,
-                          width: 320,
-                          child: Expanded(
-                              child: Column(
-                            children: [
-                           
-                            Container(
-                              
-                              width: 300,
-                              height: 300,
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                         
+                          Image.asset("assets/imgs/hannen.png"),
+                          Container(
                               decoration: BoxDecoration(
-                                
-                                image: DecorationImage(image: AssetImage("assets/imgs/hannen.png"),fit: BoxFit.cover),
-                                shape: BoxShape.circle
-                              ),
-                                
-                              ),
-                              SizedBox(
-                                height: 25,
-                              ),
-                              Text(
-                                "Hannen Jarrar",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w400, fontSize: 22),
-                              ),
-                              Text(
-                                  "fjkopwgeprkfegwp[lfp[egwlp[]egrwp[egwfkop[egwkpogwjpogjwpgjrwopjgidsvdvvvvdsvdsvdsvdssvdvsdopjiopjgopijgeopwjgopweopwegjopgwejopgwjpgjpgw]]]")
-                            ],
-                          )),
-                        ),
-                      
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 15,),
-                  Container(
-                    decoration: BoxDecoration(
-                      
-                    color: Color.fromARGB(255, 228, 228, 225),
-                    borderRadius: BorderRadius.circular(15),
-
-                    ),
-                    width: double.infinity,
-                    height: 450,
-                    child: Column(
-                      children: [
-                        Container(
-                          clipBehavior: Clip.none,
-                          width: 320,
-                          child: Expanded(
+                                  color: Color.fromARGB(255, 255, 255, 255),
+                                  borderRadius: BorderRadius.circular(15)),
+                              padding: EdgeInsets.all(8),
                               child: Column(
-                            children: [
-                           
-                            Container(
-                              
-                              width: 300,
-                              height: 300,
-                              decoration: BoxDecoration(
+                                // ignore: prefer_const_literals_to_create_immutables
+                                children: [
+                                  Text(
+                                    "Hannen Jarrar",
+                                    style: TextStyle(fontSize: 25),
+                                  ),
+                                  SizedBox(
+                                    height: 15,
+                                  ),
                                 
-                                image: DecorationImage(image: AssetImage("assets/imgs/hannen.png"),fit: BoxFit.cover),
-                                shape: BoxShape.circle
-                              ),
-                                
-                              ),
-                              SizedBox(
-                                height: 25,
-                              ),
-                              Text(
-                                "Hannen Jarrar",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w400, fontSize: 22),
-                              ),
-                              Text(
-                                  "fjkopwgeprkfegwp[lfp[egwlp[]egrwp[egwfkop[egwkpogwjpogjwpgjrwopjgidsvdvvvvdsvdsvdsvdssvdvsdopjiopjgopijgeopwjgopweopwegjopgwejopgwjpgjpgw]]]")
-                            ],
-                          )),
-                        ),
-                      
-                      ],
-                    ),
+                                ],
+                              ))
+                        ],
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Divider(
+                        thickness: 1,
+                        color: Colors.black26,
+                      )
+                    ],
                   ),
-                   SizedBox(height: 15,),
-                  Container(
-                    decoration: BoxDecoration(
-                      
-                    color: Color.fromARGB(255, 228, 228, 225),
-                    borderRadius: BorderRadius.circular(15),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            height: 15,
+                          ),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  
+                                  Image.asset("assets/imgs/1.png"),
+                                  SizedBox(width: 10,),
+                                  Image.asset("assets/imgs/2.png"),
+                                  SizedBox(width: 10,),
+                                  
+                                  Image.asset("assets/imgs/3.png"),
+                                  SizedBox(width: 10,),
 
-                    ),
-                    width: double.infinity,
-                    height: 450,
-                    child: Column(
-                      children: [
-                        Container(
-                          clipBehavior: Clip.none,
-                          width: 320,
-                          child: Expanded(
-                              child: Column(
-                            children: [
-                           
-                            Container(
-                              
-                              width: 300,
-                              height: 300,
-                              decoration: BoxDecoration(
-                                
-                                image: DecorationImage(image: AssetImage("assets/imgs/hannen.png"),fit: BoxFit.cover),
-                                shape: BoxShape.circle
-                              ),
-                                
-                              ),
-                              SizedBox(
-                                height: 25,
-                              ),
-                              Text(
-                                "Hannen Jarrar",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w400, fontSize: 22),
-                              ),
-                              Text(
-                                  "fjkopwgeprkfegwp[lfp[egwlp[]egrwp[egwfkop[egwkpogwjpogjwpgjrwopjgidsvdvvvvdsvdsvdsvdssvdvsdopjiopjgopijgeopwjgopweopwegjopgwejopgwjpgjpgw]]]")
-                            ],
-                          )),
-                        ),
-                      
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 15,),
-                  Container(
-                    decoration: BoxDecoration(
-                      
-                    color: Color.fromARGB(255, 228, 228, 225),
-                    borderRadius: BorderRadius.circular(15),
+                                  Image.asset("assets/imgs/4.png"),
+                                  SizedBox(width: 10,),
 
-                    ),
-                    width: double.infinity,
-                    height: 450,
-                    child: Column(
-                      children: [
-                        Container(
-                          clipBehavior: Clip.none,
-                          width: 320,
-                          child: Expanded(
-                              child: Column(
-                            children: [
-                           
-                            Container(
-                              
-                              width: 300,
-                              height: 300,
-                              decoration: BoxDecoration(
-                                
-                                image: DecorationImage(image: AssetImage("assets/imgs/hannen.png"),fit: BoxFit.cover),
-                                shape: BoxShape.circle
-                              ),
-                                
-                              ),
-                              SizedBox(
-                                height: 25,
-                              ),
-                              Text(
-                                "Hannen Jarrar",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w400, fontSize: 22),
-                              ),
-                              Text(
-                                  "fjkopwgeprkfegwp[lfp[egwlp[]egrwp[egwfkop[egwkpogwjpogjwpgjrwopjgidsvdvvvvdsvdsvdsvdssvdvsdopjiopjgopijgeopwjgopweopwegjopgwejopgwjpgjpgw]]]")
-                            ],
-                          )),
-                        ),
-                      
-                      ],
-                    ),
+                                  Image.asset("assets/imgs/5.png"),
+                                  SizedBox(width: 10,),
+
+                                  Image.asset("assets/imgs/6.png"),
+                                  SizedBox(width: 10,),
+
+                                  Image.asset("assets/imgs/7.png"),
+                                  SizedBox(width: 10,),
+
+                                  Image.asset("assets/imgs/8.png"),
+                                  SizedBox(width: 10,),
+
+                                  Image.asset("assets/imgs/9.png"),
+                                  SizedBox(width: 10,),
+
+                                  Image.asset("assets/imgs/10.png"),
+
+                                 
+                                ]),
+                          ),
+                         
+                         
+                        ],
+                      ),
+                     
+                     
+                    ],
                   ),
+                
                 ],
               ),
-            ))));
+            )));
   }
 }
