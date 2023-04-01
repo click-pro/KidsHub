@@ -17,152 +17,119 @@ class Gellery extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
-      body: Container(
-        width: double.infinity,
-        color: Color.fromARGB(255, 255, 255, 255),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              height: 280,
+      body: SingleChildScrollView(
+          child: Container(
+            padding: EdgeInsets.all(3),
               width: double.infinity,
-              child: Image.asset(
-                "assets/imgs/g.png",width: 400,fit: BoxFit.fill,
-              ),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Image.asset(
-                    "assets/imgs/g.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Image.asset(
-                    "assets/imgs/g3.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Image.asset(
-                    "assets/imgs/g5.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Image.asset(
-                    "assets/imgs/g3.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Image.asset(
-                    "assets/imgs/g.png",
-                    width: 210,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Image.asset(
-                    "assets/imgs/g3.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Image.asset(
-                    "assets/imgs/g5.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Image.asset(
-                    "assets/imgs/g3.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Image.asset(
-                    "assets/imgs/g.png",
-                    width: 210,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Image.asset(
-                    "assets/imgs/g3.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Image.asset(
-                    "assets/imgs/g5.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Image.asset(
-                    "assets/imgs/g3.png",
-                    width: 185,
-                    height: 150,
-                    fit: BoxFit.fill,
-                  ),
-                ],
-              ),
-            )
-          ],
-        ),
-      )),
-    );
+              color: Color.fromARGB(255, 255, 255, 255),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 280,
+                      width: double.infinity,
+                      child: Image.asset(
+                        "assets/imgs/g.png",
+                        width: 400,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Wrap(
+                      spacing: 10,
+                      runSpacing: 10,
+                      children: [
+                        Image.asset(
+                          "assets/imgs/g.png",
+                          width: 185,
+                          height: 150,
+                          fit: BoxFit.fill,
+                        ),
+                        Image.asset(
+                          "assets/imgs/g3.png",
+                          width: 185,
+                          height: 150,
+                          fit: BoxFit.fill,
+                        ),
+                        Image.asset(
+                          "assets/imgs/g5.png",
+                          width: 185,
+                          height: 150,
+                          fit: BoxFit.fill,
+                        ),
+                        Image.asset(
+                          "assets/imgs/g3.png",
+                          width: 185,
+                          height: 150,
+                          fit: BoxFit.fill,
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    SingleChildScrollView(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Expanded(
+                              flex: 1,
+                              child: Container(
+                                child: Image.asset(
+                                  "assets/imgs/new1.png",
+                                  width: 185,
+                                  height: 150,
+                                  fit: BoxFit.contain,
+                                ),
+                              )),
+                          Expanded(
+                              flex: 1,
+                              child: Container(
+                                child: Image.asset(
+                                  "assets/imgs/new2.png",
+                                  width: 185,
+                                  height: 150,
+                                  fit: BoxFit.contain,
+                                ),
+                              )),
+                          Expanded(
+                              flex: 1,
+                              child: Container(
+                                child: Image.asset(
+                                  "assets/imgs/new3.png",
+                                  width: 185,
+                                  height: 150,
+                                  fit: BoxFit.contain,
+                                ),
+                              )),
+                          Expanded(
+                              flex: 1,
+                              child: Container(
+                                child: Image.asset(
+                                  "assets/imgs/new4.png",
+                                  width: 185,
+                                  height: 150,
+                                  fit: BoxFit.contain,
+                                ),
+                              )),
+                          Expanded(
+                              flex: 1,
+                              child: Container(
+                                child: Image.asset(
+                                  "assets/imgs/new5.png",
+                                  width: 185,
+                                  height: 150,
+                                  fit: BoxFit.contain,
+                                ),
+                              )),
+                        ],
+                      ),
+                    )
+                  ]))),
+    ));
   }
 }
