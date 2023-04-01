@@ -85,7 +85,7 @@ class MyDrawer extends StatelessWidget {
                     SizedBox(
                       height: 15,
                     ),
-                    Image.network("https://imgtr.ee/images/2023/03/30/U0ZsB.th.png",width: 250,height: 250,fit: BoxFit.fill,),
+                    Image.asset("assets/imgs/qr.png",fit: BoxFit.fill,),
                     
                     
 
