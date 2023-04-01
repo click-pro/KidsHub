@@ -72,7 +72,7 @@ class EDU extends StatelessWidget {
                                           children: [
                                             Image.asset(
                                                 "assets/imgs/nSchool.png"),
-                                            Image.asset("assets/imgs/n2.png"),
+                                            Image.asset("assets/imgs/n22.png"),
                                           ],
                                         ),
                                       )
@@ -613,7 +613,7 @@ class EDU extends StatelessWidget {
                                 )),
                             Divider(),
                             Text(
-                              "Al Hassad Schools :",
+                              "Al Omaryeh Schools :",
                               style: TextStyle(
                                   fontSize: 19, fontWeight: FontWeight.bold),
                             ),

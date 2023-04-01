@@ -72,60 +72,45 @@ class Gellery extends StatelessWidget {
                       height: 15,
                     ),
                     SingleChildScrollView(
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      child: Wrap(
+                        // crossAxisAlignment: CrossAxisAlignment.center,
+                        // mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Expanded(
-                              flex: 1,
-                              child: Container(
-                                child: Image.asset(
+                         
+                            Image.asset(
                                   "assets/imgs/new1.png",
-                                  width: 185,
-                                  height: 150,
+                                  // width: 185,
+                                  // height: 150,
                                   fit: BoxFit.contain,
                                 ),
-                              )),
-                          Expanded(
-                              flex: 1,
-                              child: Container(
-                                child: Image.asset(
+                              
+                       Image.asset(
                                   "assets/imgs/new2.png",
-                                  width: 185,
-                                  height: 150,
+                                  // width: 185,
+                                  // height: 150,
                                   fit: BoxFit.contain,
                                 ),
-                              )),
-                          Expanded(
-                              flex: 1,
-                              child: Container(
-                                child: Image.asset(
+                             
+                          Image.asset(
                                   "assets/imgs/new3.png",
-                                  width: 185,
-                                  height: 150,
+                                  // width: 185,
+                                  // height: 150,
                                   fit: BoxFit.contain,
                                 ),
-                              )),
-                          Expanded(
-                              flex: 1,
-                              child: Container(
-                                child: Image.asset(
+                              
+                         Image.asset(
                                   "assets/imgs/new4.png",
-                                  width: 185,
-                                  height: 150,
+                                  // width: 185,
+                                  // height: 150,
                                   fit: BoxFit.contain,
                                 ),
-                              )),
-                          Expanded(
-                              flex: 1,
-                              child: Container(
-                                child: Image.asset(
+                       Image.asset(
                                   "assets/imgs/new5.png",
-                                  width: 185,
-                                  height: 150,
+                                  // width: 185,
+                                  // height: 150,
                                   fit: BoxFit.contain,
                                 ),
-                              )),
+                        
                         ],
                       ),
                     )

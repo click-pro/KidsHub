@@ -39,9 +39,9 @@ class MyDrawer extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             // ignore: prefer_const_literals_to_create_immutables
                             children: [
-                              Text(". Dontaing"),
-                              Text(". health indidstion"),
-                              Text(". edu indisidion"),
+                              Text(". Donate for"),
+                              Text(". Health Institutions"),
+                              Text(". Educational Institutions"),
                               SizedBox(height: 15,),
                               Text("We all have a responsibility as a society to help those in need, and children in particular can benefit greatly from our assistance. Donating to organizations that support children, such as schools and hospitals, is one way we can make a difference."),
                             ],
@@ -108,7 +108,7 @@ class MyDrawer extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Text("© Copyright: Nour Adly",style: TextStyle(decoration: TextDecoration.underline,fontWeight: FontWeight.w600),),
+                        Text("© Copyright: Nour Adli",style: TextStyle(decoration: TextDecoration.underline,fontWeight: FontWeight.w600),),
                         Text("Miss Teacher"),
                       ],
                     )
